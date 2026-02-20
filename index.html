@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://necolas.github.io/normalize.css/latest/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome to Sawit Lounge</title>
+</head>
+<body>
+    <div class="layout">
+        <div class="layout-left">
+        <div class="brand">Sawit Lounge.</div>
+        <div class="badge">Coming Soon</div>
+        <h1 class="heading">Get your morning coffee ready</h1>
+        <p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.
+        </p>
+    <form class="invite-form">
+        <input type="text" placeholder="Email Address" />
+        <button type="submit">Invite Me</button>
+    </form>
+    <p class="form-text">
+        Sign up for updates to be the first to know when we launch. No Spam</p>
+    </div>
+
+    <div class="layout-right">
+    </div>
+    </div>
+    <div id="toast" class="toast"></div>
+
+    <script>
+    const form = document.querySelector('.invite-form');
+    const input = document.querySelector('.invite-form input');
+    const toast = document.getElementById('toast');
+    
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+    
+        const email = input.value.trim();
+    
+        if (!email.endsWith('.com') || !email.includes('@')) {
+            showToast("Email yang anda masukkan tidak valid", false);
+            return;
+        }
+    
+        showToast("Terimakasih sudah menjadi bagian dari Sawlong. Kami akan mengirim update ke email kamu", true);
+        input.value = "";
+    });
+    
+    function showToast(message, isSuccess) {
+        toast.textContent = message;
+        toast.className = "toast show " + (isSuccess ? "success" : "error");
+    
+        setTimeout(() => {
+            toast.classList.remove("show");
+        }, 4000);
+    }
+    </script>
+</body>
+</html>
