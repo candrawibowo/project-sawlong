@@ -24,7 +24,7 @@ body {
 .layout-right {
     flex-shrink: 0;
     width: 45%;
-    background-image: url(/illustration.jpg);
+    background-image: url(/illustration2.png);
     background-size: cover;
 }
 
