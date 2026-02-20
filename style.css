@@ -17,7 +17,9 @@ body {
 
 .layout-left {
     width: 55%;
-    padding: 80px 120px;}
+    padding: 80px 120px;
+    background-color: #F8F2E1;
+}
 
 .layout-right {
     flex-shrink: 0;
@@ -37,9 +39,9 @@ body {
     display: inline-block;
     padding: 5px 15px;
     margin-bottom: 15px;
-    background-color: rgba(17, 63, 226,0.1);
+    background-color: rgba(144, 149, 14, 0.1);
     border-radius: 100px;
-    color : #113fe2;
+    color : #D0A837;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
@@ -80,7 +82,7 @@ body {
 .invite-form button {
     padding: 10px 30px;
     flex-shrink: 0;
-    background-color: #113fe2;
+    background-color: #D0A837;
     color: white;
     border-radius: 8px;
     border: none;
