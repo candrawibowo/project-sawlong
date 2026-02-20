@@ -1,6 +1,7 @@
 body {
     font-family: 'Open Sans' -apple-system, BlinkMacSystemFont, 
     "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+    margin: 0;
 }
 
 .layout {
@@ -120,32 +121,42 @@ body {
         flex-direction: column;
     }
 
-    /* Pindahkan gambar ke atas */
+    /* IMAGE FULL WIDTH */
     .layout-right {
         order: -1;
         width: 100%;
-        height: 300px;
+        height: 260px;
         background-position: center;
         background-size: cover;
     }
 
+    /* HAPUS PADDING BESAR */
     .layout-left {
         width: 100%;
-        padding: 40px 24px;
+        padding: 32px 20px;
     }
 
-    .heading,
+    /* FONT LEBIH PROPORSIONAL */
+    .heading {
+        width: 100%;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
     .lead {
         width: 100%;
+        font-size: 15px;
+        line-height: 26px;
     }
 
+    /* FORM STACK */
     .invite-form {
         flex-direction: column;
     }
 
     .invite-form input {
         margin-right: 0;
-        margin-bottom: 15px;
+        margin-bottom: 14px;
     }
 
     .invite-form button {
@@ -153,6 +164,11 @@ body {
     }
 
     .brand {
-        margin-bottom: 40px;
+        margin-bottom: 32px;
+    }
+
+    .form-text {
+        font-size: 12px;
+        line-height: 20px;
     }
 }
