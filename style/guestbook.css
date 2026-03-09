@@ -1,0 +1,121 @@
+* { box-sizing: border-box; }
+
+.guestbook-modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.guestbook-modal.active {
+    display: flex;
+}
+
+.guestbook-content {
+    background: linear-gradient(180deg, #0d3b34, #0a2f2a);
+    width: 95%;
+    max-width: 520px;
+    padding: 40px 30px;
+    border-radius: 18px;
+    position: relative;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.6);
+    animation: fadeIn 0.35s ease;
+}
+
+/* TITLE */
+.guestbook-content h2 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    color: #f5f0e8;
+    font-weight: 700;
+}
+
+/* FORM */
+.guestbook-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* INPUT STYLE */
+.guestbook-content input,
+.guestbook-content select,
+.guestbook-content textarea {
+    padding: 16px 18px;
+    border-radius: 12px;
+    border: none;
+    background: #d9d9d9;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.guestbook-content input:focus,
+.guestbook-content select:focus,
+.guestbook-content textarea:focus {
+    background: #ffffff;
+    box-shadow: 0 0 0 2px #cfa437;
+}
+
+/* ROW NAME & EMAIL */
+.row {
+    width: 100%;
+    display: flex;
+    gap: 16px;
+}
+
+.row input {
+    flex: 1;
+    min-width: 0;
+}
+
+/* TEXTAREA */
+.guestbook-content textarea {
+    min-height: 140px;
+    resize: none;
+}
+
+/* BUTTON */
+.submit-btn {
+    margin-top: 10px;
+    background: linear-gradient(180deg, #d4af37, #c89b1e);
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #1b1b1b;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(180deg, #e0bb4c, #b8902e);
+    transform: translateY(-2px);
+}
+
+.close-modal {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 26px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}

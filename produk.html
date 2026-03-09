@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="style/produk.css">
+    <link rel="stylesheet" href="style/guestbook.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/icon-sl-removebg-preview.png">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <a class="logo">
+            <img src="assets/logo-sl-1_optimized.webp" alt="logo">
+        </a>
+
+        
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+            <!-- ham -->
+            <svg id="icon-ham" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                 fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M4 6l16 0"/><path d="M4 12l16 0"/><path d="M4 18l16 0"/>
+            </svg>
+
+            <!-- close -->
+            <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24"
+                 fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                 style="display:none">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M18 6l-12 12"/><path d="M6 6l12 12"/>
+            </svg>
+          </button>
+
+            <div class="mobile-menu" id="mobile-menu">
+                <ul class="navbar-nav">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="produk.html">PRODUCT</a></li>
+                </ul>
+                
+                <div class="gb-btn">
+                    <a href="#" id="openGuestBook">Guest Book</a>
+                </div>
+            </div>
+    </nav>
+
+    <div class="product-container">
+
+        <!-- HEADLINE -->
+        <h1 class="headline1">OUR PRODUCT</h1>
+
+        
+        <div class="filter-btns">
+            <button class="f-btn" onclick="filterProduct('all')">All</button>
+            <button class="f-btn" onclick="filterProduct('best-seller')">Bibit Tanaman Unggul</button>
+            <button class="f-btn" onclick="filterProduct('PNS')">Produk Non Sawit</button>
+            <button class="f-btn" onclick="filterProduct('PL')">Produk Lainnya</button>
+        </div>
+
+        <!-- CARD PRODUCT -->
+        <div class="card-product">
+            <div class="product best-seller">
+                <img class="p-img" src="../assets/bibit kelapa sawit1.jpg" alt="">
+                <div class="desc">
+                    <h3>Bibit Kelapa Sawit</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.6000</div>
+                        <div class="next-btn">
+                            <a href="../category/bibit-kelapa-sawit.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product best-seller">
+                <img class="p-img" src="../assets/kakao1.jpg" alt="">
+                <div class="desc">
+                    <h3>Benih Kakao</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.650</div>
+                        <div class="next-btn">
+                            <a href="../category/benih-kakao.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product best-seller">
+                <img class="p-img" src="../assets/kecambah1.jpg" alt="">
+                <div class="desc">
+                    <h3>Kecambah Kelapa Sawit</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.8000</div>
+                        <div class="next-btn">
+                            <a href="../category/kecambah.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product best-seller">
+                <img class="p-img" src="../assets/bibitkelapa3_4_11zon.jpg" alt="">
+                <div class="desc">
+                    <h3>BIBIT KELAPA KOPYOR</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.900.000</div>
+                        <div class="next-btn">
+                            <a href="../category/bibit-kelapa-kopyor.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product best-seller">
+                <img class="p-img" src="../assets/kelapa dalam3.png" alt="">
+                <div class="desc">
+                    <h3>BIBIT KELAPA KOPYOR DALAM</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.350.000</div>
+                        <div class="next-btn">
+                            <a href="../category/bibit-kelapa-dalam.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product best-seller">
+                <img class="p-img" src="../assets/marcuna2.jpg" alt="">
+                <div class="desc">
+                    <h3>MARCUNA</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.600.000</div>
+                        <div class="next-btn">
+                            <a href="../category/marcuna.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK NON SAWIT -->
+            <div class="product PNS">
+                <img class="p-img" src="../assets/oricmas2.jpg" alt="">
+                <div class="desc">
+                    <h3>ORICMAS</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.85.000</div>
+                        <div class="next-btn">
+                            <a href="../category/oricmas.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product PNS">
+                <img class="p-img" src="../assets/feromonas1.jpg" alt="">
+                <div class="desc">
+                    <h3>FEROMONOAS</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.85.000</div>
+                        <div class="next-btn">
+                            <a href="../category/feromonas.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product PNS">
+                <img class="p-img" src="../assets/marfu-p2.jpg" alt="">
+                <div class="desc">
+                    <h3>MARFU-P</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.7.700</div>
+                        <div class="next-btn">
+                            <a href="../category/marfu-p.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product PNS">
+                <img class="p-img" src="../assets/gramik1.jpg" alt="">
+                <div class="desc">
+                    <h3>GRAMIC PLUS</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.10.000</div>
+                        <div class="next-btn">
+                            <a href="../category/gramic-plus.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product PNS">
+                <img class="p-img" src="../assets/kairomix1.jpg" alt="">
+                <div class="desc">
+                    <h3>KAIROMIX</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.60.000</div>
+                        <div class="next-btn">
+                            <a href="../category/kairomix.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product PNS">
+                <img class="p-img" src="assets/rinco1.jpg" alt="">
+                <div class="desc">
+                    <h3>RHYNCHOMONAS</h3>
+                    <div class="price-tag">
+                        <div class="price">Rp.85.000</div>
+                        <div class="next-btn">
+                            <a href="../category/rhynchomonas.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- PRODUK LAINNYA -->
+        <div class="product PL">
+            <img class="p-img" src="../assets/day cream.jpg" alt="">
+            <div class="desc">
+                <h3>ANTI-AGING DAY CREAM</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.60.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Anti-Aging-Day-Cream.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="../assets/aging night.jpg" alt="">
+            <div class="desc">
+                <h3>ANTI-AGING NIGHT CREAM</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.65.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Anti-Aging-Night-Cream.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="../assets/bolugulungelaeis.png" alt="">
+            <div class="desc">
+                <h3>BOLU GULUNG ELAEIS</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.60.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Bolu-Gulung-Elaeis.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="../assets/brightening day.jpg" alt="">
+            <div class="desc">
+                <h3>BRIGHTENING DAY CREAM</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.40.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Brightening-Day-Cream.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="../assets/brightening night.jpg" alt="">
+            <div class="desc">
+                <h3>BRIGHTENING NIGHT CREAM</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.45.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Brightening-Night-Cream.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="../assets/choco1.jpg" alt="">
+            <div class="desc">
+                <h3>CHOCOPALM</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.15.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Chocopalm.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="../assets/facial wash.jpg" alt="">
+            <div class="desc">
+                <h3>FACIAL WASH</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.25.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Facial-Wash.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="../assets/handbody.png" alt="">
+            <div class="desc">
+                <h3>HAND & BODY LOTION</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.30.000</div>
+                    <div class="next-btn">
+                        <a href="../category/handbody-lotion.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="../assets/paket kosemtik.png" alt="">
+            <div class="desc">
+                <h3>PAKET PRODUK KOSMETIK</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.265.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Paket-Produk-Kosmetik.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="../assets/palma baking1.jpg" alt="">
+            <div class="desc">
+                <h3>PALMA BAKING SHORTENING</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.17.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Palma-Baking-Shortening.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="../assets/donat.png" alt="">
+            <div class="desc">
+                <h3>PALMA DONAT</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.2.500</div>
+                    <div class="next-btn">
+                        <a href="../category/Palma-Donat.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="assets/palma frying2.jpg" alt="">
+            <div class="desc">
+                <h3>PALMA FRYING SHORTENING</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.15.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Palma-Frying-Shortening.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="assets/margarin1.jpg" alt="">
+            <div class="desc">
+                <h3>PALMA MARGARIN</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.25.000</div>
+                    <div class="next-btn">
+                        <a href="../category/Palma-Margarin.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product PL">
+            <img class="p-img" src="assets/palma roti1.jpg" alt="">
+            <div class="desc">
+                <h3>PALMA ROTI</h3>
+                <div class="price-tag">
+                    <div class="price">Rp.2.500</div>
+                    <div class="next-btn">
+                        <a href="../category/Palma-Roti.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-arrow-right"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l14 0" /><path d="M13 18l6 -6" /><path d="M13 6l6 6" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+        <!-- FOOTER -->
+    <footer>
+        <div class="footer-cont">
+            <div class="sawlong">
+                <a class="logo">
+                    <img src="assets/logo-sl-1_optimized.webp" alt="logo">
+                </a>
+                <div class="sawlong-desc">
+                    <p>SawitLounge merupakan layanan digital yang menyediakan produk dan bibit sawit unggulan hasil riset terpercaya. Kami berfokus pada kualitas, transparansi dan kemudahan akses bagi mitra serta pelanggan.</p>
+                </div>
+                <div class="sosmed">
+                    <a href="https://x.com/lensawit" target="_blank"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_11_614)">
+                        <path d="M4 4L15.733 20H20L8.267 4H4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M4 20L10.768 13.232M13.228 10.772L20 4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_11_614">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg></a>
+                    <a href="https://www.facebook.com/lensawit.id/" target="_blank"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_11_627)">
+                        <path d="M7 10V14H10V21H14V14H17L18 10H14V8C14 7.73478 14.1054 7.48043 14.2929 7.29289C14.4804 7.10536 14.7348 7 15 7H18V3H15C13.6739 3 12.4021 3.52678 11.4645 4.46447C10.5268 5.40215 10 6.67392 10 8V10H7Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_11_627">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg></a>
+                    <a href="https://www.instagram.com/lensawit/" target="_blank"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_11_637)">
+                        <path d="M4 8C4 6.93913 4.42143 5.92172 5.17157 5.17157C5.92172 4.42143 6.93913 4 8 4H16C17.0609 4 18.0783 4.42143 18.8284 5.17157C19.5786 5.92172 20 6.93913 20 8V16C20 17.0609 19.5786 18.0783 18.8284 18.8284C18.0783 19.5786 17.0609 20 16 20H8C6.93913 20 5.92172 19.5786 5.17157 18.8284C4.42143 18.0783 4 17.0609 4 16V8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16.5 7.5V7.51" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_11_637">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg></a>
+                    <a href="https://www.youtube.com/channel/UCMDf9p2fe9M5RbxIbVX_-GQ" target="_blank"><svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_11_650)">
+                        <path d="M2 8C2 6.93913 2.42143 5.92172 3.17157 5.17157C3.92172 4.42143 4.93913 4 6 4H18C19.0609 4 20.0783 4.42143 20.8284 5.17157C21.5786 5.92172 22 6.93913 22 8V16C22 17.0609 21.5786 18.0783 20.8284 18.8284C20.0783 19.5786 19.0609 20 18 20H6C4.93913 20 3.92172 19.5786 3.17157 18.8284C2.42143 18.0783 2 17.0609 2 16V8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10 9L15 12L10 15V9Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_11_650">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg> </a>       
+                </div>
+                <div class="btn-footer">
+                    <a href="http://wa.me/6285155113838" target="_blank">Kontak Admin</a>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_131_432)">
+                        <path d="M5 12H19" stroke="#0B292A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13 18L19 12" stroke="#0B292A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M13 6L19 12" stroke="#0B292A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_131_432">
+                        <rect width="24" height="24" fill="white"/>
+                        </clipPath>
+                        </defs>
+                    </svg>
+                        
+                </div>
+            </div>
+
+            <div class="side-map">
+                <h3>Side Map</h3>
+                <a href="index.html">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="produk.html">Product</a>
+                <a href="#">Guest Book</a>
+            </div>
+
+            <div class="tentang">
+                <div class="add">
+                    <h3>Our Address</h3>
+                    <p>Jalan Brigjen Katamso No. 51, Kampung Baru Medan, 20158</p>
+                </div>
+                <div class="open">
+                    <h3>Opening Hourse</h3>
+                    <div>
+                        <p>Mon - Fri: 07.30 AM - 17.00 PM</p>
+                        <p>Sat - Sun: Off</p>
+                    </div>
+                </div>
+
+                <div class="kontak">
+                    <h3>Contact Us</h3>
+                    <div>
+                        <p>Email : sawitlounge@iopri.org</p>
+                        <p>Phone:085155113838</p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+        <!-- GUEST BOOK MODAL-->
+        <div class="guestbook-modal" id="guestbookModal">
+            <div class="guestbook-content">
+              <span class="close-modal" id="closeGuestBook">&times;</span>
+              <h2>GUEST BOOK</h2>
+              <form id="guestbookForm">
+                <div class="row">
+                  <input type="text" placeholder="Name" required>
+                  <input type="email" placeholder="Email" required>
+                </div>
+                <input type="text" placeholder="Phone Number" required>
+                <select required>
+                    <option>Pilih Keperluan</option>
+                    <option>Penawaran Produk</option>
+                    <option>Negosiasi Produk</option>
+                    <option>Konfirmasi Produk</option>
+                </select>
+                <textarea placeholder="Pesan anda" required></textarea>
+                <button type="submit" class="submit-btn">Kirim Sekarang</button>
+              </form>
+            </div>
+        </div>
+
+
+    <script src="js/script.js"></script>
+    <script src="js/guestbook.js"></script>
+</body>
+</html>
